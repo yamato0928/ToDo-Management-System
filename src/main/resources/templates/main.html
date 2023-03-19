@@ -67,7 +67,7 @@
      </div>
     </div>
     <div class="calendar_row sd" th:each="week : ${matrix}">
-     <div class="calendar_box  sd" th:each="day : ${week}">
+     <div class="calendar_box sd" th:each="day : ${week}">
       <div>
        <a th:href="@{/main/create/{date}(date=${day})}">[[${day.dayOfMonth}]]</a>
       </div>
